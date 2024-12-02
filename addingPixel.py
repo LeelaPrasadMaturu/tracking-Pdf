@@ -25,4 +25,4 @@ def add_tracking_pixel(input_pdf, output_pdf, tracking_pixel_url):
     with open(output_pdf, "wb") as out_file:
         writer.write(out_file)
 
-add_tracking_pixel("input.pdf", "tracked_output.pdf", "http://localhost:3000/track")
+add_tracking_pixel("input.pdf", "tracked_output.pdf", "https://tracking-pdf.onrender.com/track")
