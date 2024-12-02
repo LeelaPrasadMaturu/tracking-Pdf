@@ -9,7 +9,7 @@ const logFilePath = path.join('/tmp', 'tracking_logs.txt');
 
 app.get('/track', (req, res) => {
    
-    console.log('Endpoint /track was accessed : PDF Opened:  ${new Date().toISOString()} , From IP: ${req.ip}\n'); // Debug log
+    console.log(`Endpoint /track was accessed : PDF Opened:  ${new Date().toISOString()} , From IP: ${req.ip}\n`); // Debug log
 
      // Create log entry
     const logEntry = `PDF Opened:  ${new Date().toISOString()} , From IP: ${req.ip}\n`;
