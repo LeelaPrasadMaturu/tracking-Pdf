@@ -2,9 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
+require("dotenv").config();
 
 // MongoDB Atlas Connection URI
-const MONGO_URI = 'mongodb://localhost:27017/';
+const MONGO_URI = process.env.MONGO_URI;
 
 // Connect to MongoDB Atlas
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
