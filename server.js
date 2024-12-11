@@ -6,6 +6,9 @@ require("dotenv").config();
 
 // MongoDB Atlas Connection URI
 const MONGO_URI = process.env.MONGO_URI;
+const cors = require('cors');
+app.use(cors());
+
 
 // Connect to MongoDB Atlas
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
